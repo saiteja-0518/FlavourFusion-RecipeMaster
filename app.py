@@ -7,8 +7,8 @@ st.set_page_config(
     page_title="Flavour Fusion",
     layout="wide"
 )
-
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDny0HA3X4WGclWB2xVdBYXjxhtijTsA1A"
+# 
+os.environ["GOOGLE_API_KEY"] = "your_new_api_key_here"
 
 client = genai.Client()
 
