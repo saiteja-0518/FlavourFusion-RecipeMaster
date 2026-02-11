@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/142d336c-d454-4316-ac41-f2f52e8ee333" /># FlavourFusion: AI-Driven Recipe Blogging
+# FlavourFusion: AI-Driven Recipe Blogging
 ---
 
 ##  Domain
