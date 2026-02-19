@@ -16,7 +16,7 @@ generation_config = {
     "temperature": 0.75,
     "top_p": 0.95,
     "top_k": 64,
-    "max_output_tokens": 800
+    "max_output_tokens": 3000
 }
 
 MODEL_NAME = "gemini-flash-latest"
@@ -61,13 +61,11 @@ Include:
 Ensure the content is long, detailed, and close to {word_count} words.
 """
 
-
         response = client.models.generate_content(
-        model=MODEL_NAME,
-        contents=prompt,
-        config=generation_config
-     )
-
+            model=MODEL_NAME,
+            contents=prompt,
+            config=generation_config
+        )
 
         st.success("🎉 Your recipe is ready!")
         return response.text
@@ -75,7 +73,8 @@ Ensure the content is long, detailed, and close to {word_count} words.
     except Exception as e:
         st.error(f"Error generating recipe: {e}")
         return None
-    
+
+
 st.title("🍽️ Flavour Fusion: AI-Driven Recipe Blogging")
 st.write("Enter a recipe topic and choose the word count to generate an AI-powered recipe blog.")
 
@@ -87,6 +86,17 @@ if st.button("Generate Recipe"):
         st.warning("Please enter a recipe topic.")
     else:
         result = recipe_generation(topic, word_count)
-        if result:
-            st.write(result)
 
+        if result:
+            st.markdown(result)
+
+            # Show word count
+            st.info(f"Generated approximately {len(result.split())} words.")
+
+            # Download button
+            st.download_button(
+                label="⬇️ Download Recipe",
+                data=result,
+                file_name=f"{topic.replace(' ', '_')}_recipe.txt",
+                mime="text/plain"
+            )
