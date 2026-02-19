@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide"
 )
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDny0HA3X4WGclWB2xVdBYXjxhtijTsA1A"
+os.environ["GOOGLE_API_KEY"] = "enter the google api key"
 
 client = genai.Client()
 
