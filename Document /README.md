@@ -1,1 +1,1 @@
-create a project readme file
+create a project documentation file
