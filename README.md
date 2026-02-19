@@ -1,33 +1,32 @@
 # FlavourFusion: AI-Driven Recipe Blogging
 ---
-
 ##  Domain
-Artificial Intelligence / Machine Learning
+Google Cloud – Generative AI
 ---
 
-## 📖 Project Description
+## Project Description
 FlavourFusion is an AI-powered web application that leverages Google Gemini's Large Language Model (LLM) to generate structured and engaging recipe blogs. The application allows users to enter a recipe topic and specify the desired word count. Based on the input, the model generates a detailed blog including title, ingredients, instructions, tips, and serving suggestions.
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 Food bloggers and content creators often spend significant time writing detailed recipe blogs. This project aims to automate blog creation using Generative AI, reducing time and improving creativity.
 
 ---
-## 🎯 Objectives
+##  Objectives
 - Integrate Google Gemini API with Streamlit.
 - Generate structured recipe blog posts dynamically.
 - Allow user-defined word count customization.
 - Improve user experience with interactive UI.
 - Display a programming joke while content is being generated.
 
-## 🛠️ Technologies Used
+## Technologies Used
 - Python
 - Streamlit
 - Google Gemini API
 - Large Language Model (LLM)
 ---
 
-## ⚙️ Project Workflow
+## Project Workflow
 
 1. User enters recipe topic.
 2. User selects desired word count.
@@ -42,9 +41,6 @@ Food bloggers and content creators often spend significant time writing detailed
 (Add your application screenshots here)
 
 Example:
-
-
----
 ##  How to Run the Project
 
 ### Step 1: Clone the Repository
